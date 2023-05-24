@@ -1,0 +1,28 @@
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 2rem;
+}
+
+.info_1 {
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_1__1 {
+    width: 49%;
+}
+
+.info_1__2 {
+    width: 49%;
+}
+
+.info_2 {
+    width: 49%;
+}
+
+.location {
+    display: flex;
+    justify-Content: space-between;
+}

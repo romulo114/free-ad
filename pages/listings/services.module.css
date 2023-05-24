@@ -1,0 +1,22 @@
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info_1_1 {
+    position: relative;
+}
+
+.info_label {
+    position: absolute;
+    left: 10%;
+}
+
+.info_label span {
+    margin-right: 10%;
+}
+
+.serviceItem {
+    width: 50%;
+}

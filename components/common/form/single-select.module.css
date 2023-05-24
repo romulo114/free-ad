@@ -1,0 +1,70 @@
+.container {
+    position: relative;
+    margin: auto;
+}
+
+.fieldset {
+    width: 30rem;
+    max-width: 100%;
+    padding: 0.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-grey);
+    border-radius: 0.5rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.fieldset:hover {
+    border-color: var(--color-grey-50);
+}
+
+.selectGroups {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    margin-right: 0.5rem;
+}
+
+.badge span {
+    padding: 0.5rem;
+    border: 1px solid var(--color-grey);
+    border-radius: 1rem;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.2rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.badge:hover span {
+    border: 1px solid var(--color-green);
+    transition: all 0.25s ease-in-out;
+    color: var(--color-green);
+}
+
+.badge:last-child {
+    margin: 0;
+}
+
+.inputSelect {
+    display: none;
+}
+
+.inputSelect:checked + span {
+    color: white;
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+    transition: all 0.25s ease-in-out;
+}
+
+.error {
+    margin: 0;
+    padding: 0.1rem 0 0 0.8rem;
+    font-size: 1rem !important;
+    font-weight: normal;
+    color: var(--color-red);
+    min-height: 14px;
+    height: 20px;
+}

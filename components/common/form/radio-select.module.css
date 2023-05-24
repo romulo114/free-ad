@@ -1,0 +1,121 @@
+.container {
+    position: relative;
+
+}
+
+.optionsContent {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    margin-top: 28px;
+}
+
+.optionTitle {
+    margin-top: 15px;
+    /* margin-right: 20px; */
+    width: 70%;
+}
+
+.optionRadio {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.optionItem {
+    position: relative;
+    width: 30%;
+}
+
+.optionItem:last-child {
+    margin-right: -30px
+}
+
+.optionItem label {
+    position: absolute;
+    top: -10px;
+    left: -40%;
+}
+
+.optionInput {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 13.33333px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    transition: all 0.15s ease-out 0s;
+    background: var(--color-grey);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    z-index: 1000;
+    border-radius: 50%;
+}
+
+.optionInput:hover {
+    background: #9faab7;
+}
+
+.optionInput:checked {
+    background: var(--color-green);
+}
+
+.optionInput:checked::before {
+    width: 20px;
+    height: 26px;
+    display: flex;
+    content: "*";
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Font Awesome 5 Free';
+}
+
+.optionInput:checked::after {
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    background: var(--color-green);
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+.optionInput::after {
+    border-radius: 50%;
+}
+
+.priceInput {
+    position: relative;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    left: -20px;
+    height: 25px;
+    width: 70px;
+    transition: all 0.15s ease-out 0s;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    z-index: 1000;
+}
+
+.bar {
+    width: 70%;
+    margin-top: 10px;
+    border-bottom: 1px solid var(--color-grey);
+}

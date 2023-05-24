@@ -1,0 +1,145 @@
+.info_1 {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.info_1_1 {
+    width: 48%;
+    position: relative;
+    height: 400px;
+}
+
+.info_1_2 {
+    width: 48%;
+}
+
+.info_2 {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.thumbnailsContainer {
+    position: relative;
+    height: 100%;
+}
+
+.uploadImage {
+    height: 120px;
+    border: 0.1rem solid var(--color-grey-light-2);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.uploadImageBtn {
+    width: 100%;
+    background: transparent;
+    border: none;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: var(--color-grey-light-2);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.uploadImage:hover .uploadImageBtn {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.fieldset {
+    width: 30rem;
+    max-width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-grey);
+    border-radius: 0.5rem;
+    transition: all 0.25s ease-in-out;
+    position: absolute;
+    bottom: 40%;
+}
+
+.fieldset:hover {
+    border-color: var(--color-grey-50);
+}
+
+.fieldset input {
+    border: none;
+    outline: none;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    position: absolute;
+    bottom: 120%;
+}
+
+.thumbnailsItem {
+    width: 90px;
+    position: relative;
+    height: 120px;
+    border: 1px solid var(--color-grey);
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.thumbnailsItem img {
+    border-radius: 10px;
+}
+
+.uploadImageWrapper {
+    height: 100%;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-grey);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    border: 2px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle::after {
+    position: absolute;
+    content: '';
+    height: 20px;
+    border: 2px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imageItem {
+    position: relative;
+    top: -10px;
+    bottom: 0px;
+    height: 120px;
+    width: 90px;
+    margin-right: 10px;
+}
+

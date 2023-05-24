@@ -1,0 +1,163 @@
+.container {
+    position: relative;
+    margin: 0.5rem auto;
+}
+
+.fieldset {
+    width: 30rem;
+    max-width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-grey);
+    border-radius: 0.5rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.fieldset:hover {
+    border-color: var(--color-grey-50);
+}
+
+.fieldset input {
+    border: none;
+    outline: none;
+}
+
+.error {
+    margin: 0;
+    padding: 0.1rem 0 0 0.8rem;
+    font-size: 1rem !important;
+    font-weight: normal;
+    color: var(--color-red);
+    min-height: 14px;
+    height: 20px;
+}
+
+.styledError {
+    position: absolute;
+    right: 0.8rem;
+    top: 1rem;
+    height: 1.6rem;
+    width: 1.6rem;
+    cursor: pointer;
+}
+
+.label {
+    font-size: 1.2rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.25s ease-in-out;
+    background-color: white;
+    z-index: 40;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.uploadImageWrapper {
+    height: 100%;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-grey);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    border: 3px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle::after {
+    position: absolute;
+    content: '';
+    height: 20px;
+    border: 3px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imageItem {
+    position: relative;
+    top: -10px;
+    bottom: 0px;
+    height: 102.5%;
+}
+
+.imageItem img {
+    object-fit: fill;
+}
+
+.imageCover {
+    margin-left: 25px;
+    bottom: 20px;
+    position: absolute;
+    color: var(--color-grey);
+    transition: all 0.25s ease-in-out;
+}
+
+.imageCover:hover {
+    color: initial;
+    transition: all 0.25s ease-in-out;
+}
+
+.imageCover li:last-child {
+    margin-top: 10px;
+}
+
+.imageItemBtnWrapper {
+    opacity: 0;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 400;
+    bottom: 20px;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+}
+
+.imageItem:hover .imageItemBtnWrapper {
+    opacity: 1;
+    transition: all 0.25s ease-in-out;
+}
+
+.imageItemBtnWrapper button {
+    border-radius: 50%;
+    padding: 10px 12px;
+    font-size: 20px;
+    background: transparent;
+    color: var(--color-red);
+    border-color: var(--color-red);
+    border-width: 2px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.imageItemBtnWrapper button:last-child {
+    color: white;
+    border-color: transparent;
+    background-color: var(--color-green);
+}
+
+.imageItemBtnWrapper button:hover {
+    transform: scale(1.1);
+    transition: all 0.25s ease-in-out;
+}

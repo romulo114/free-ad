@@ -1,0 +1,93 @@
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info1_1 {
+    width: 30%;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activeLabel {
+    /* width: 40%; */
+}
+
+.timeStampLabel {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.fromLabel {
+    margin-right: 78px;
+    margin-left: 20px;
+}
+
+.workingHours {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: baseline;
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.when label {
+    margin-left: 10px;
+    width: 40%;
+}
+
+.timeStamp {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.timeStamp select {
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 30px;
+    width: 80px;
+    text-align: center;
+    /* padding-left: 10px; */
+}
+
+.timeStamp select:last-child {
+    margin-right: initial;
+}
+
+.info1_2 {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkboxInput {
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none; */
+    position: relative;
+    top: 6px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    transition: all 0.15s ease-out 0s;
+    background-color: var(--color-green);
+    border: none;
+    /* color: #fff; */
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    z-index: 1000;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
